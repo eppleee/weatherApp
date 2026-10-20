@@ -1,739 +1,760 @@
-*,
-::before,
-::after {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position: ;
-  --tw-gradient-via-position: ;
-  --tw-gradient-to-position: ;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
-  --tw-contain-size: ;
-  --tw-contain-layout: ;
-  --tw-contain-paint: ;
-  --tw-contain-style: ;
-}
-
-::backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x: ;
-  --tw-pan-y: ;
-  --tw-pinch-zoom: ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position: ;
-  --tw-gradient-via-position: ;
-  --tw-gradient-to-position: ;
-  --tw-ordinal: ;
-  --tw-slashed-zero: ;
-  --tw-numeric-figure: ;
-  --tw-numeric-spacing: ;
-  --tw-numeric-fraction: ;
-  --tw-ring-inset: ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur: ;
-  --tw-brightness: ;
-  --tw-contrast: ;
-  --tw-grayscale: ;
-  --tw-hue-rotate: ;
-  --tw-invert: ;
-  --tw-saturate: ;
-  --tw-sepia: ;
-  --tw-drop-shadow: ;
-  --tw-backdrop-blur: ;
-  --tw-backdrop-brightness: ;
-  --tw-backdrop-contrast: ;
-  --tw-backdrop-grayscale: ;
-  --tw-backdrop-hue-rotate: ;
-  --tw-backdrop-invert: ;
-  --tw-backdrop-opacity: ;
-  --tw-backdrop-saturate: ;
-  --tw-backdrop-sepia: ;
-  --tw-contain-size: ;
-  --tw-contain-layout: ;
-  --tw-contain-paint: ;
-  --tw-contain-style: ;
-}
-
-/*
-! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
-*/
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  /* 1 */
-  border-width: 0;
-  /* 2 */
-  border-style: solid;
-  /* 2 */
-  border-color: #e5e7eb;
-  /* 2 */
-}
-
-::before,
-::after {
-  --tw-content: '';
-}
-
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
-
-html,
-:host {
-  line-height: 1.5;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
-  -o-tab-size: 4;
-  tab-size: 4;
-  /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 4 */
-  font-feature-settings: normal;
-  /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
-}
-
-/*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-
-body {
-  margin: 0;
-  /* 1 */
-  line-height: inherit;
-  /* 2 */
-}
-
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
-hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  border-top-width: 1px;
-  /* 3 */
-}
-
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr:where([title]) {
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-}
-
-/*
-Remove the default font size and weight for headings.
-*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
-  font-size: 1em;
-  /* 4 */
-}
-
-/*
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
-table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
-  border-collapse: collapse;
-  /* 3 */
-}
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  font-weight: inherit;
-  /* 1 */
-  line-height: inherit;
-  /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
-  color: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  padding: 0;
-  /* 3 */
-}
-
-/*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
-button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
-  -webkit-appearance: button;
-  /* 1 */
-  background-color: transparent;
-  /* 2 */
-  background-image: none;
-  /* 2 */
-}
-
-/*
-Use the modern Firefox focus style for all focusable elements.
-*/
-
-:-moz-focusring {
-  outline: auto;
-}
-
-/*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
-}
-
-/*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type='search'] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
-
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-  margin: 0;
-}
-
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  padding: 0;
-}
-
-ol,
-ul,
-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
-  padding: 0;
-}
-
-/*
-Prevent resizing textareas horizontally by default.
-*/
-
-textarea {
-  resize: vertical;
-}
-
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input::placeholder,
-textarea::placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-/*
-Set the default cursor for buttons.
-*/
-
-button,
-[role="button"] {
-  cursor: pointer;
-}
-
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
-:disabled {
-  cursor: default;
-}
-
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
-}
-
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden]:where(:not([hidden="until-found"])) {
-  display: none;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap");
+
+:root {
+  --background-1: #EAF2D7;
+  --background-2: #B3DEE2;
+  --background-3: #EFCFE3;
+  --surface: rgba(239, 207, 227, 0.64);
+  --surface-strong: rgba(239, 207, 227, 0.92);
+  --card-border: rgba(226, 115, 150, 0.26);
+  --text: #493a43;
+  --muted: rgba(73, 58, 67, 0.74);
+  --accent: #E27396;
+  --accent-strong: #c95d80;
+  --accent-soft: #B3DEE2;
+  --accent-wash: #E2739666;
+  --shadow: rgba(73, 58, 67, 0.16);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url("../styles/download.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Dalliance ', 'Gill Sans MT', Dalliance, 'Trebuchet MS', sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main {
-  min-width: 350px;
-  height: -moz-max-content;
-  height: max-content;
-  min-height: 380px;
-  background-color: #8945544b;
-  border-radius: 30px;
-  box-shadow: 0 30px 50px #5533;
-  padding: 30px;
   box-sizing: border-box;
 }
 
-main form {
-  border: 1px solid #5552;
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(179, 222, 226, 0.72), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(226, 115, 150, 0.2), transparent 40%),
+    linear-gradient(135deg, var(--background-1) 0%, var(--background-2) 48%, var(--background-3) 100%);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
   display: flex;
-  border-radius: 30px;
-  justify-content: space-between;
-  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  position: relative;
+  width: min(1120px, 100%);
+  min-height: 850px;
+  padding: 28px 30px 22px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(234, 242, 215, 0.94), rgba(239, 207, 227, 0.84));
+  border: 1px solid rgba(226, 115, 150, 0.22);
+  box-shadow: 0 28px 80px var(--shadow);
   overflow: hidden;
 }
 
-main form input,
-main form button {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  padding: 10px;
+.ambient {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
-main form i {
-  opacity: 0.5;
+.ambient-one {
+  width: 220px;
+  height: 220px;
+  background: rgba(179, 222, 226, 0.8);
+  top: 45px;
+  right: 180px;
 }
 
-#weather-wrapper {
+.ambient-two {
+  width: 260px;
+  height: 260px;
+  background: rgba(226, 115, 150, 0.25);
+  bottom: 30px;
+  left: 40px;
+}
+
+.topbar,
+.dashboard {
   position: relative;
+  z-index: 1;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 420px) auto;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  font-size: 1.1rem;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--background-2), var(--accent-wash));
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 54px;
+  padding: 0 18px 0 16px;
+  border-radius: 18px;
+  background: rgba(234, 242, 215, 0.66);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+}
+
+.search svg {
+  width: 17px;
+  height: 17px;
+  opacity: 0.78;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.search input::-moz-placeholder {
+  color: rgba(73, 58, 67, 0.56);
+}
+
+.search input::placeholder {
+  color: rgba(73, 58, 67, 0.56);
+}
+
+.search kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 28px;
+  border-radius: 8px;
+  padding: 0 8px;
+  background: rgba(179, 222, 226, 0.5);
+  border: 1px solid var(--card-border);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.unit-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 16px;
+  background: rgba(239, 207, 227, 0.62);
+  border: 1px solid var(--card-border);
+}
+
+.unit-btn {
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.unit-btn.active {
+  background: var(--accent-wash);
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.search-status {
+  margin: -10px 0 -8px;
+  color: var(--accent-soft);
+  font-size: 0.9rem;
+}
+
+.search-status.error {
+  color: var(--accent-strong);
+}
+
+.location-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
 }
 
 #weather-header {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fde9dc;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: "Garamond", Times, serif;
+  margin: 0;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  line-height: 1.1;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-weight: 700;
 }
 
-#location {
+.location {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  font-size: 3rem;
-  font-family: "Garamond", Times, serif;
-  color: #fde9dc;
+  gap: 8px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
-#location img {
-  border-radius: 4px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+.location svg {
+  opacity: 0.8;
 }
 
-.result {
+.updated {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.updated span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 18px var(--accent-wash);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+}
+
+.glass-card {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52), 0 20px 35px var(--shadow);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.hero-card {
+  border-radius: 28px;
+  min-height: 300px;
+  padding: 22px 22px 18px;
+}
+
+.weather-snapshot {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 1rem;
-  color: #fde9dc;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.temperature-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  margin-top: 8px;
 }
 
 .temperature {
+  font-size: clamp(4rem, 8vw, 6.2rem);
+  line-height: 0.82;
+  letter-spacing: -0.08em;
+  font-weight: 700;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.degree {
+  font-size: 2.2rem;
+  margin-top: 14px;
+  opacity: 0.9;
+}
+
+.hero-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.sun-disc {
+  position: absolute;
+  inset: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.9), rgba(226, 115, 150, 0.82) 42%, rgba(179, 222, 226, 0.32) 100%);
+  box-shadow: 0 0 26px var(--accent-wash);
+}
+
+.weather-symbol {
+  position: relative;
+  z-index: 1;
+  color: var(--accent-strong);
+}
+
+.sun-symbol {
+  color: var(--accent-strong);
+}
+
+.condition {
+  margin-top: 18px;
+}
+
+.condition h2 {
+  margin: 0 0 6px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 600;
+}
+
+.condition p {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.high-low {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.metric-card {
+  border-radius: 22px;
+  padding: 20px 18px 16px;
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metric-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(179, 222, 226, 0.48);
+  border: 1px solid var(--card-border);
+  color: var(--accent-strong);
+}
+
+.metric-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.metric-card strong {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-top: 10px;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.metric-card strong small {
+  font-size: 0.62em;
+  color: var(--muted);
+}
+
+.metric-note {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.forecast-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: var(--accent-strong);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hourly-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(90px, 1fr));
+  gap: 12px;
+  padding: 14px;
+  border-radius: 24px;
+}
+
+.forecast-empty {
+  grid-column: 1 / -1;
+  margin: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.hour {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.temperature img {
-  width: 100px;
-  filter: drop-shadow(0 10px 30px #555);
-}
-
-.temperature figcaption {
-  font-size: 4rem;
-  font-family: "Garamond", Times, serif;
-  margin-top: 0.5rem;
-}
-
-.description {
-  font-size: 1rem;
-  font-style: italic;
-  margin-top: 1rem
-}
-
-main .temperature img {
-  width: 150px;
-  filter: drop-shadow(0 10px 50px #555);
-}
-
-main .temperature figcaption {
-  font-size: em;
-}
-
-main ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 1rem;
+  justify-content: center;
   gap: 10px;
+  min-height: 112px;
+  border-radius: 18px;
+  padding: 12px 10px;
+  background: rgba(234, 242, 215, 0.34);
+  border: 1px solid transparent;
 }
 
-main li {
-  background-color: #cd8f98;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px 10px;
-  font-weight: bold;
-  font-size: small;
+.hour.current {
+  background: var(--accent-wash);
+  border-color: rgba(226, 115, 150, 0.42);
 }
 
-main ul li i {
-  font-size: 2em;
-  margin: 20px 0;
-  display: block !important;
+.hour span {
+  color: var(--muted);
+  font-size: 0.76rem;
 }
 
-main li:nth-child(2) {
-  background-color: #794953;
+.hour strong {
+  font-size: 1.18rem;
+  font-family: "Manrope", "Segoe UI", sans-serif;
 }
 
-main li:nth-child(3) {
-  background-color: #ba716a;
+.city-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 
-main.error {
-  animation: errorEffect 0.3s linear 1;
+.city-nav button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 20px;
+  border: 1px solid var(--card-border);
+  background: rgba(234, 242, 215, 0.44);
+  color: var(--text);
+  text-align: left;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-@keyframes errorEffect {
-  0% {
-    transform: translate(10px, 5px)
+.city-nav button.selected {
+  background: linear-gradient(135deg, rgba(179, 222, 226, 0.58), var(--accent-wash));
+  border-color: rgba(226, 115, 150, 0.42);
+}
+
+.city-nav span {
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+.city-nav small {
+  color: var(--muted);
+}
+
+.city-nav strong {
+  font-size: 1.4rem;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.photo-credit {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.photo-credit a {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    padding: 22px 18px 18px;
   }
 
-  25% {
-    transform: translate(-5px, 0)
+  .topbar {
+    grid-template-columns: 1fr;
   }
 
-  50% {
-    transform: translate(8px, 2px)
+  .brand {
+    justify-self: center;
   }
 
-  75% {
-    transform: translate(-2px, 5px)
+  .main-grid {
+    grid-template-columns: 1fr;
   }
 
-  100% {
-    transform: translate(0, 0);
+  .city-nav {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    align-items: flex-start;
+    padding: 12px 10px;
+  }
+
+  .app-shell {
+    width: 100%;
+    min-height: auto;
+    padding: 18px 14px 16px;
+    border-radius: 22px;
+  }
+
+  .topbar {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand units"
+      "search search";
+    gap: 14px 10px;
+    margin-bottom: 22px;
+  }
+
+  .brand {
+    grid-area: brand;
+    justify-self: start;
+  }
+
+  .unit-toggle {
+    grid-area: units;
+  }
+
+  .search {
+    grid-area: search;
+    width: 100%;
+    padding-inline: 14px;
+  }
+
+  .search kbd {
+    display: none;
+  }
+
+  .dashboard {
+    gap: 20px;
+  }
+
+  .location-row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  #weather-header {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .location {
+    font-size: 0.85rem;
+  }
+
+  .updated {
+    margin: 0 0 3px;
+    font-size: 0.72rem;
+  }
+
+  .hero-card {
+    min-height: 260px;
+    padding: 18px;
+  }
+
+  .hero-icon {
+    width: 92px;
+    height: 92px;
+  }
+
+  .hero-icon .weather-symbol {
+    width: 70px;
+    height: 70px;
+  }
+
+  .sun-disc {
+    inset: 14px;
+  }
+
+  .temperature {
+    font-size: clamp(4rem, 19vw, 5rem);
+  }
+
+  .detail-grid {
+    gap: 10px;
+  }
+
+  .metric-card {
+    min-height: 128px;
+    padding: 14px 12px 12px;
+  }
+
+  .metric-card p {
+    font-size: 0.7rem;
+  }
+
+  .metric-card strong {
+    font-size: 1.55rem;
+  }
+
+  .metric-note {
+    font-size: 0.7rem;
+  }
+
+  .section-heading {
+    align-items: center;
+  }
+
+  .text-button {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .hourly-grid {
+    grid-template-columns: repeat(6, minmax(68px, 1fr));
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(142, 220, 255, 0.38) transparent;
+  }
+
+  .hour {
+    min-height: 104px;
+    scroll-snap-align: start;
+  }
+
+  .city-nav {
+    grid-template-columns: none;
+    grid-auto-columns: minmax(132px, 1fr);
+    grid-auto-flow: column;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(142, 220, 255, 0.38) transparent;
+  }
+
+  .city-nav button {
+    min-height: 112px;
+    padding: 14px;
+    scroll-snap-align: start;
+  }
+
+  .photo-credit {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .location-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .updated {
+    margin-top: 2px;
+  }
+
+  .high-low {
+    gap: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .search {
+    height: 50px;
+  }
+
+  .location-row {
+    flex-direction: column;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hourly-grid {
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
   }
 }
